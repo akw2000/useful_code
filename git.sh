@@ -6,7 +6,6 @@ git add .
 git commit -m "add" 
 git push origin main 
 // personal access token 
-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
 
 // public repo clone just allow hidden files and delete .git file init a repo through vscode
 
