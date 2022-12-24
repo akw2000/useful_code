@@ -1,3 +1,4 @@
+# VM setup
 # ubuntu install
 # mem 5gb
 # storage 30gb
@@ -9,6 +10,7 @@ sudo apt install build-essential dkms linux-headers-$(uname -r)
 sudo apt update
 sudo apt install git
 git --version
+
 # // pintos copy
 git clone https://github.com/jhu-cs318/pintos.git 
 sudo apt-get install build-essential automake git
@@ -28,6 +30,7 @@ export PATH=/home/akw/cs2042Labs/toolchain/x86_64/bin:$PATH
 which i386-elf-gcc 
 i386-elf-gcc --version 
 
+# use one of following cmds based on the OS version
 # // install qemu emulator ubuntu 18.04
 sudo apt-get install qemu libvirt-daemon-system libvirt-clients
 # // new ubuntu
@@ -44,7 +47,7 @@ cp ../misc/gdb-macros  /home/akw/cs2042Labs/toolchain/x86_64/misc
 
 
 
-# // additional sw
+# // additional sw(optional)
 sudo apt-get install cgdb
 sudo apt-get install ctags
 sudo apt-get install scope
@@ -63,7 +66,7 @@ sudo snap install --classic code
 code --version
 
 --------------- 
-# test cases failed
+# test cases failed -> pintos doesn't boot when test cases running
 # threads/make.vars
 # change boch to qemu
 # SIMULATOR = --qemu
