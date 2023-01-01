@@ -38,7 +38,7 @@ sudo apt-get install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils
 
 # // setup the utility tools
 cd pintos/src/utils && make
-
+# run the command in src/utils
 cp backtrace pintos Pintos.pm pintos-gdb pintos-set-cmdline pintos-mkdisk setitimer-helper squish-pty squish-unix /home/akw/cs2042Labs/toolchain/x86_64/bin
 
 mkdir /home/akw/cs2042Labs/toolchain/x86_64/misc
