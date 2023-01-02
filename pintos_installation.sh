@@ -31,9 +31,11 @@ which i386-elf-gcc
 i386-elf-gcc --version 
 
 # use one of following cmds based on the OS version
+# to check which version you have
+lsb_release -a 
 # // install qemu emulator ubuntu 18.04
 sudo apt-get install qemu libvirt-daemon-system libvirt-clients
-# // new ubuntu
+# // new ubuntu(working for ubuntu 20.04)
 sudo apt-get install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils
 
 # // setup the utility tools
