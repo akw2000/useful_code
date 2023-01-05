@@ -27,3 +27,6 @@ sudo chmod 774 mr.sh
 	
 # // open directory in vscode
 code .
+
+# how to zip a file(inluding .git files)
+zip -r temp.zip Documents
